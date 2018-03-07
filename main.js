@@ -2,7 +2,6 @@ const yargs = require('yargs');
 const findFiles = require('./lib/find-files.js');
 const copyFiles = require('./lib/copy-files.js');
 const deleteFiles = require('./lib/delete-files.js');
-// const util = require('util');
 
 const argv = yargs
   .usage('main [options]')
@@ -33,28 +32,3 @@ async function main () {
   }
 }
 main();
-// const array = findFiles(source, (error) => {
-//   if (error) {
-//     console.log(error);
-//     process.exit(1);
-//   }
-// });
-// // console.log(111, array);
-// copyFiles(newFolder, array, (error) => {
-//   if (error) {
-//     console.log(error);
-//     process.exit(1);
-//   }
-// });
-// if (/^y(es)?$/i.test(delFolder)) {
-//   deleteFiles(source, (error) => {
-//     if (error) {
-//       console.log(error);
-//       process.exit(1);
-//     }
-//   });
-//   console.log('Operation is completed. The source folder was deleted');
-//   process.exit(0);
-// }
-// console.log('Operation is completed. The source folder is not deleted');
-// // process.exit(0);
