@@ -30,7 +30,7 @@ eventEmitter.on('connect', (req, res) => {
 });
 
 server.on('request', (req, res) => {
-  if (req.method === 'GET') {
+  if (req.url === '/') {
     eventEmitter.emit('connect', req, res);
   }
 });
